@@ -82,7 +82,7 @@ label= "BASE"                              ;
                 &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
                 &mt LGUI A  &mt LALT R  &mt LSHFT S &mt LCTRL T &kp D           &kp H       &mt RCTRL N &mt RSHFT E &mt RALT I  &mt RGUI O
     &kp Q       &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
-                                        &lt SYM ESC &kp SPACE   &kp RET         &lt NAV TAB &kp BSPC    &kp LGUI(S)
+                                        &kp ESC     &kp SPACE   &kp RET         &lt NAV TAB &kp BSPC    &kp LGUI(S)
                         >;
                 };
 
