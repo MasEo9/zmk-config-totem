@@ -23,7 +23,7 @@
 #define SYM  2
 #define ADJ  3
 
-ZMK_MOD_MORPH(gresc,
+ZMK_MOD_MORPH(z_gresc,
     bindings = <&kp ESC>, <&kp GRAVE>;
     mods = <(MOD_LALT|MOD_RALT)>;
 )
@@ -75,7 +75,7 @@ label= "BASE"                              ;
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P 
                 &hml LGUI A &hml LALT S &hml LSHFT D &hml LCTRL F &kp G         &kp H       &hmr RCTRL J &hmr RSHFT K &hmr RALT L  &hmr RGUI SEMI
     &caps_word  &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
-                                        &gresc      &lt NAV SPACE &kp RET       &kp TAB     &lt SYM BSPC &kp RC(S) 
+                                        &z_gresc    &lt NAV SPACE &kp RET       &kp TAB     &lt SYM BSPC &kp RC(S) 
                         >;
                 };
 
