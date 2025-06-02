@@ -177,8 +177,8 @@ label= "MOUS"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &to 0       &to 1      &to 2       &to 3       &trans          &trans      &trans      &mkp MOVE_UP  &trans      &trans
-                &trans      &trans     &trans      &trans      &trans          &trans      &mkp MOVE_LEFT &mkp MOVE_DOWN &mkp MOVE_RIGHT    &trans  
+                &to 0       &to 1      &to 2       &to 3       &trans          &trans      &trans      &mmv MOVE_UP  &trans      &trans
+                &trans      &trans     &trans      &trans      &trans          &trans      &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT    &trans  
     &trans      &trans      &trans     &trans      &trans      &trans          &trans      &mkp LCLK   &mkp RCLK   &trans      &trans       &trans         
                                        &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
