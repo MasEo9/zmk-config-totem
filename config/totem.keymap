@@ -18,11 +18,11 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/totem.h"
 
-#define BASE 0
-#define NAV  1
-#define SYM  2
-#define ADJ  3
-#define MOS  4
+#define BASE  0
+#define NAV   1
+#define SYM   2
+#define ADJ   3
+#define MOUSE 4
 
 #define _BT_CLR &bt BT_CLR_ALL
 
@@ -127,7 +127,7 @@ label= "SYM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp N8       &kp SQT     &kp DQT       
+                &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp LSHFT(N8) &kp SQT     &kp DQT       
                 &kp CAPS    &trans      &trans      &trans      &trans          &kp C_MUTE  &kp C_PP    &none        &none       &trans 
     &trans      &none       &none       &trans      &trans      &trans          &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV &kp C_NEXT  &trans  &trans         
                                         &mo ADJ     &trans      &trans          &trans      &trans      &trans      
@@ -162,7 +162,7 @@ label= "ADJ"                               ;
 
                 adjust_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "MOS"                               ;
+label= "MOUSE"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃   RESET   ┃ BT CLEAR  ┃  OUT TOG  ┃           ┃           ┃   ┃           ┃    F7     ┃    F8     ┃    F9     ┃    F12    ┃
