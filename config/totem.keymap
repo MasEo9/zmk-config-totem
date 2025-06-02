@@ -18,11 +18,11 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/totem.h"
 
-#define BASE  0
-#define NAV   1
-#define SYM   2
-#define ADJ   3
-#define MOUSE 4
+#define BASE 0
+#define NAV  1
+#define SYM  2
+#define ADJ  3
+#define MOUS 4
 
 #define _BT_CLR &bt BT_CLR_ALL
 
@@ -160,9 +160,9 @@ label= "ADJ"                               ;
                         >;
                 };
 
-                adjust_layer {
+                mouse_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "MOUSE"                               ;
+label= "MOUS"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃   RESET   ┃ BT CLEAR  ┃  OUT TOG  ┃           ┃           ┃   ┃           ┃    F7     ┃    F8     ┃    F9     ┃    F12    ┃
