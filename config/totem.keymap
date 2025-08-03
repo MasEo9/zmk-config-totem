@@ -38,8 +38,8 @@ ZMK_MOD_MORPH(z_gresc,
 
 ZMK_HOLD_TAP(hml,
     flavor = "balanced";
-    tapping-term-ms = <220>;
-    require-prior-idle-ms = <115>;
+    tapping-term-ms = <200>;
+    require-prior-idle-ms = <105>;
     hold-trigger-key-positions = <KEYS_R THUMBS>;
     hold-trigger-on-release;
     bindings = <&kp>, <&kp>;
@@ -47,8 +47,8 @@ ZMK_HOLD_TAP(hml,
 
 ZMK_HOLD_TAP(hmr,
     flavor = "balanced";
-    tapping-term-ms = <220>;
-    require-prior-idle-ms = <115>;
+    tapping-term-ms = <200>;
+    require-prior-idle-ms = <105>;
     hold-trigger-key-positions = <KEYS_L THUMBS>;
     hold-trigger-on-release;
     bindings = <&kp>, <&kp>;
