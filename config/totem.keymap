@@ -26,7 +26,6 @@
 #define MOUS 4
 
 #define _BT_CLR &bt BT_CLR_ALL
-#define _SFT_CW &hml caps_word LSHFT
 
 ZMK_MOD_MORPH(z_gresc,
     bindings = <&kp ESC>, <&kp GRAVE>;
@@ -39,7 +38,7 @@ ZMK_MOD_MORPH(z_gresc,
 
 ZMK_HOLD_TAP(hml,
     flavor = "balanced";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <220>;
     require-prior-idle-ms = <115>;
     hold-trigger-key-positions = <KEYS_R THUMBS>;
     hold-trigger-on-release;
@@ -48,11 +47,16 @@ ZMK_HOLD_TAP(hml,
 
 ZMK_HOLD_TAP(hmr,
     flavor = "balanced";
-    tapping-term-ms = <200>;
+    tapping-term-ms = <220>;
     require-prior-idle-ms = <115>;
     hold-trigger-key-positions = <KEYS_L THUMBS>;
     hold-trigger-on-release;
     bindings = <&kp>, <&kp>;
+)
+
+ZMK_BEHAVIOR(ss_cw, tap_dance,
+    tapping-term-ms = <200>;
+    bindings = <&sk LSHFT>, <&caps_word>;
 )
 
 /
@@ -79,7 +83,7 @@ label= "BASE"                              ;
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P 
                 &hml LGUI A &hml LALT S &hml LSHFT D &hml LCTRL F &kp G         &kp H       &hmr RCTRL J &hmr RSHFT K &hmr RALT L  &hmr RGUI SEMI
-        _SFT_CW &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
+        &ss_cw  &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
                                         &z_gresc    &lt NAV SPACE &kp RET       &kp TAB     &lt SYM BSPC &kp RC(S) 
                         >;
                 };
