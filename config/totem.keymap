@@ -109,7 +109,7 @@ label= "NAVI"                              ;
 
                 &none       &none       &kp UP      &kp PG_UP   &none           &kp FSLH    &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_MULTIPLY
                 &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none           &kp MINUS   &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_PLUS
-    &trans      &none       &none       &none       &kp PG_DN   &none           &kp KP_N0   &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp % &trans 
+    &trans      &none       &none       &none       &kp PG_DN   &none           &kp KP_N0   &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp PRCNT   &trans 
                                         &trans      &trans      &trans          &trans      &trans      &mo ADJ      
                         >;
                 };
