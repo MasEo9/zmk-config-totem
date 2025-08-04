@@ -132,7 +132,6 @@ label= "SYM"                               ;
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-trans
                 &kp EXCL    &kp LT      &kp GT      &kp MINUS   &kp EQUAL      &kp CARET   &kp LBRC    &kp RBRC     &kp DLLR    &kp PIPE       
                 &kp GRAVE   &kp STAR    &kp FSLH    &kp UNDER   &kp AMPS       &kp NUHS    &kp LPAR    &kp RPAR     &kp SEMI    &kp COLON 
     &trans      &kp TILDE   &kp PLUS    &kp LBKT    &kp RBKT    &kp PRCNT      &kp AT      &kp DQT     &kp COMMA    &kp DOT     &kp SQT     &trans         
