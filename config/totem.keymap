@@ -26,7 +26,7 @@
 #define MOUS 4
 
 #define _BT_CLR &bt BT_CLR_ALL
-
+#define _LT_SL(layer) &lt_sl layer layer
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left hand
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right hand
@@ -73,7 +73,7 @@ ZMK_BEHAVIOR(lt_sl, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <225>;
     quick-tap-ms = <105>;
-    bindings = <&lt SYM>, <&sl SYM>;
+    bindings = <&lt>, <&sl>;
 )
 
 /
@@ -101,7 +101,7 @@ label= "BASE"                              ;
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P 
                 &hml LGUI A &hml LALT S &hml LSHFT D &hml LCTRL F &kp G         &kp H       &hmr RCTRL J &hmr RSHFT K &hmr RALT L &hmr RGUI SEMI
         &ss_cw  &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RC(S)
-                                        &kp ESC    &lt NAV SPACE &kp RET        &kp TAB     &bs_del_num &lt_sl 
+                                        &kp ESC    &lt NAV SPACE &kp RET        &kp TAB     &bs_del_num _LT_SL(SYM)
                        >;
                 };
 
