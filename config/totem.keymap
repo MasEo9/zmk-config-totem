@@ -67,6 +67,10 @@ ZMK_MOD_MORPH(bs_del_num,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
+ZMK_BEHAVIOR(qt_dqt, tap_dance,
+    tapping-term-ms = <115>;
+    bindings = <&sl2>, <&kp DQT>;
+)
 
 ZMK_BEHAVIOR(mo_sl, hold_tap,
     flavor = "balanced";
