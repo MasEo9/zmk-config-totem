@@ -71,9 +71,9 @@ ZMK_MOD_MORPH(bs_del_num,
 
 ZMK_BEHAVIOR(lt_sl, hold_tap,
     flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <100>;
-    bindings = <&lt>, <&sl>;
+    tapping-term-ms = <225>;
+    quick-tap-ms = <105>;
+    bindings = <&lt SYM>, <&sl SYM>;
 )
 
 /
@@ -101,7 +101,7 @@ label= "BASE"                              ;
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P 
                 &hml LGUI A &hml LALT S &hml LSHFT D &hml LCTRL F &kp G         &kp H       &hmr RCTRL J &hmr RSHFT K &hmr RALT L &hmr RGUI SEMI
         &ss_cw  &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RC(S)
-                                        &kp ESC    &lt NAV SPACE &kp RET        &kp TAB     &bs_del_num &lt_sl SYM 2
+                                        &kp ESC    &lt NAV SPACE &kp RET        &kp TAB     &bs_del_num &lt_sl 
                        >;
                 };
 
