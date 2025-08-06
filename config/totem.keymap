@@ -75,6 +75,8 @@ ZMK_BEHAVIOR(mo_sl, hold_tap,
     bindings = <&mo 2>, <&sl 2>;
 )
 
+/
+
     {
         keymap {
                 compatible = "zmk,keymap";
