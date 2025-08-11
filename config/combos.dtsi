@@ -7,6 +7,12 @@
   ╰───────╮ LH2 LH1 LH0 │ │ RH0 RH1 RH2 ╭───────╯
           ╰─────────────╯ ╰─────────────╯ */
 
+#define COMBO_TERM_SLOW 30
+#define COMBO_IDLE_SLOW 50
+
+#define COMBO_TERM_FAST 18
+#define COMBO_IDLE_FAST 150
+
 // left hand combos
 // upper row
 /*
@@ -16,7 +22,8 @@ ZMK_COMBO(excl,  &kp EXCL,   LT3 LM2, ALL, 30)
 ZMK_COMBO(lt,    &kp LT,     LT3 LT2, ALL, 30)
 ZMK_COMBO(gt,    &kp GT,     LT1 LT2, ALL, 30)
 ZMK_COMBO(minus, &kp MINUS,  LT1 LM2, ALL, 30)
-ZMK_COMBO(prcnt, &kp PRCNT,  LT1 LT0, ALL, 30)
+ZMK_COMBO(prcnt, &kp PRCNT,  LM1 LT1, ALL, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+ZMK_COMBO(dqt,   &kp DQT,    LM2 LT2, ALL, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
 
 // middle row
 /*
