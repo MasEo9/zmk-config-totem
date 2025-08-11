@@ -16,7 +16,6 @@ ZMK_COMBO(excl,  &kp EXCL,   LT3 LM2, ALL, 30)
 ZMK_COMBO(lt,    &kp LT,     LT3 LT2, ALL, 30)
 ZMK_COMBO(gt,    &kp GT,     LT1 LT2, ALL, 30)
 ZMK_COMBO(minus, &kp MINUS,  LT1 LM2, ALL, 30)
-ZMK_COMBO(minus, &kp MINUS,  LT2 LM2, ALL, 30)
 ZMK_COMBO(prcnt, &kp PRCNT,  LT1 LT0, ALL, 30)
 
 // middle row
@@ -37,6 +36,4 @@ ZMK_COMBO(lbkt,   &kp LBKT,  LB3 LB2, ALL, 30)
 ZMK_COMBO(rbkt,   &kp RBKT,  LB2 LB1, ALL, 30)
 ZMK_COMBO(star,   &kp STAR,  LM2 LB1, ALL, 30)
 ZMK_COMBO(amps,   &kp AMPS,  LB1 LB0, ALL, 30)
-
-
 
