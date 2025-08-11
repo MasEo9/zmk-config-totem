@@ -7,10 +7,10 @@
   ╰───────╮ LH2 LH1 LH0 │ │ RH0 RH1 RH2 ╭───────╯
           ╰─────────────╯ ╰─────────────╯ 
   ╭─────────────────────╮ ╭─────────────────────╮
-  │   !  <   >   -   %  │ │ RT0 RT1 RT2 RT3 RT4 │
-  │  `   '       _   =  │ │ RM0 RM1 RM2 RM3 RM4 │
-  │  ~   [   ]   *   &  │ │ RB0 RB1 RB2 RB3 RB4 │
-  ╰───────╮             │ │ RH0 RH1 RH2 ╭───────╯
+  │   !  <   >   -   %  │ │   !  <   >   -   %  │
+  │  `   '       _   =  │ │  `   '       _   =  │
+  │  ~   [   ]   *   &  │ │  ~   [   ]   *   &  │
+  ╰───────╮             │ │             ╭───────╯
           ╰─────────────╯ ╰─────────────╯ 
 */
 
@@ -38,4 +38,23 @@ ZMK_COMBO(lbkt,   &kp LBKT,  LB3 LB2, ALL, COMBO_HORIZONTAL)
 ZMK_COMBO(rbkt,   &kp RBKT,  LB2 LB1, ALL, COMBO_HORIZONTAL)
 ZMK_COMBO(star,   &kp STAR,  LB1 LM2, ALL, COMBO_CROSS)
 ZMK_COMBO(amps,   &kp AMPS,  LB1 LB0, ALL, COMBO_HORIZONTAL)
+
+
+// right hand combos
+// upper row
+ZMK_COMBO(caret,  &kp CARET,  RT1 RM2, ALL, COMBO_CROSS)
+ZMK_COMBO(lbrc,   &kp LBRC,   RT1 RT2, ALL, COMBO_HORIZONTAL)
+ZMK_COMBO(rbrc,   &kp RBRC,   RT3 RT2, ALL, COMBO_HORIZONTAL)
+ZMK_COMBO(dllr,   &kp DLLR,   RT3 RM2, ALL, COMBO_CROSS)
+ZMK_COMBO(pipe,   &kp PIPE,   RT3 RT4, ALL, COMBO_HORIZONTAL) 
+                            
+// middle row         ROW
+ZMK_COMBO(hash,   &kp HASH,   RM0 RM1, ALL, COMBO_HORIZONTAL)
+ZMK_COMBO(lpar,   &kp LPAR,   RM1 RM2, ALL, COMBO_HORIZONTAL)
+ZMK_COMBO(rpar,   &kp RPAR,   RM3 RM2, ALL, COMBO_HORIZONTAL)
+ZMK_COMBO(kpplus, &kp KPPLUS, RM3 RM4, ALL, COMBO_HORIZONTAL)
+                            
+// bottom row         ROW
+ZMK_COMBO(at,     &kp AT,     RB0 RM1, ALL, COMBO_CROSS)
+ZMK_COMBO(bslsh,  &kp BSLSH,  RB1 RB2, ALL, COMBO_HORIZONTAL)
 
