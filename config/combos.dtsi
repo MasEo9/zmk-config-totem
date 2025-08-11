@@ -5,42 +5,37 @@
   │ LM4 LM3 LM2 LM1 LM0 │ │ RM0 RM1 RM2 RM3 RM4 │
   │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │
   ╰───────╮ LH2 LH1 LH0 │ │ RH0 RH1 RH2 ╭───────╯
-          ╰─────────────╯ ╰─────────────╯ */
+          ╰─────────────╯ ╰─────────────╯ 
+  ╭─────────────────────╮ ╭─────────────────────╮
+  │   !  <   >   -   %  │ │ RT0 RT1 RT2 RT3 RT4 │
+  │  `   '       _   =  │ │ RM0 RM1 RM2 RM3 RM4 │
+  │  ~   [   ]   *   &  │ │ RB0 RB1 RB2 RB3 RB4 │
+  ╰───────╮             │ │ RH0 RH1 RH2 ╭───────╯
+          ╰─────────────╯ ╰─────────────╯ 
+*/
 
-#define COMBO_TERM_SLOW 30
-#define COMBO_IDLE_SLOW 50
+#define COMBO_CROSS 50
+#define COMBO_HORIZONTAL 30
 
-#define COMBO_TERM_FAST 18
-#define COMBO_IDLE_FAST 150
 
 // left hand combos
 // upper row
-/*
-  │ ! < > - % │ 
-*/
-ZMK_COMBO(excl,  &kp EXCL,   LT3 LM2, ALL, 30)
-ZMK_COMBO(lt,    &kp LT,     LT3 LT2, ALL, 30)
-ZMK_COMBO(gt,    &kp GT,     LT1 LT2, ALL, 30)
-ZMK_COMBO(minus, &kp MINUS,  LT1 LM2, ALL, 30)
-ZMK_COMBO(prcnt, &kp PRCNT,  LM1 LT1, ALL, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
-ZMK_COMBO(dqt,   &kp DQT,    LM2 LT2, ALL, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)
+ZMK_COMBO(excl,  &kp EXCL,   LT3 LM2, ALL, COMBO_CROSS)
+ZMK_COMBO(lt,    &kp LT,     LT3 LT2, ALL, COMBO_HORIZONTAL)
+ZMK_COMBO(gt,    &kp GT,     LT1 LT2, ALL, COMBO_HORIZONTAL)
+ZMK_COMBO(minus, &kp MINUS,  LT1 LM2, ALL, COMBO_CROSS)
+ZMK_COMBO(prcnt, &kp PRCNT,  LT1 LT0, ALL, COMBO_HORIZONTAL) 
 
 // middle row
-/*
-  │ ` ' _ = │ 
-*/
-ZMK_COMBO(grave,  &kp GRAVE, LM4 LM3, ALL, 30)
-ZMK_COMBO(sqt,    &kp SQT,   LM3 LM2, ALL, 30)
-ZMK_COMBO(under,  &kp UNDER, LM1 LM2, ALL, 30)
-ZMK_COMBO(equal,  &kp EQUAL, LM0 LM1, ALL, 30)
+ZMK_COMBO(grave,  &kp GRAVE, LM4 LM3, ALL, COMBO_HORIZONTAL)
+ZMK_COMBO(sqt,    &kp SQT,   LM3 LM2, ALL, COMBO_HORIZONTAL)
+ZMK_COMBO(under,  &kp UNDER, LM1 LM2, ALL, COMBO_HORIZONTAL)
+ZMK_COMBO(equal,  &kp EQUAL, LM0 LM1, ALL, COMBO_HORIZONTAL)
 
 // bottom row
-/*
-  │ ~ [ ] * & │ 
-*/
-ZMK_COMBO(tilde,  &kp TILDE, LB3 LM2, ALL, 30)
-ZMK_COMBO(lbkt,   &kp LBKT,  LB3 LB2, ALL, 30)
-ZMK_COMBO(rbkt,   &kp RBKT,  LB2 LB1, ALL, 30)
-ZMK_COMBO(star,   &kp STAR,  LM2 LB1, ALL, 30)
-ZMK_COMBO(amps,   &kp AMPS,  LB1 LB0, ALL, 30)
+ZMK_COMBO(tilde,  &kp TILDE, LB3 LM2, ALL, COMBO_CROSS)
+ZMK_COMBO(lbkt,   &kp LBKT,  LB3 LB2, ALL, COMBO_HORIZONTAL)
+ZMK_COMBO(rbkt,   &kp RBKT,  LB2 LB1, ALL, COMBO_HORIZONTAL)
+ZMK_COMBO(star,   &kp STAR,  LB1 LM2, ALL, COMBO_CROSS)
+ZMK_COMBO(amps,   &kp AMPS,  LB1 LB0, ALL, COMBO_HORIZONTAL)
 
