@@ -8,16 +8,21 @@
           ╰─────────────╯ ╰─────────────╯ */
 
 // left hand combos
-ZMK_COMBO(excl,  &kp EXCL,   LT4 RM0, ALL, 25)
-ZMK_COMBO(lt,    &kp LT,     LT3 RM0, ALL, 25)
-ZMK_COMBO(gt,    &kp GT,     LT2 RM0, ALL, 25)
-ZMK_COMBO(minus, &kp MINUS,  LT1 RM0, ALL, 25)
-ZMK_COMBO(prcnt, &kp PRCNT,  LT0 RM0, ALL, 25)
+ZMK_COMBO(excl,  &kp EXCL,   LT4 RM2, ALL, 30)
+ZMK_COMBO(lt,    &kp LT,     LT3 RM2, ALL, 30)
+ZMK_COMBO(gt,    &kp GT,     LT2 RM2, ALL, 30)
+ZMK_COMBO(minus, &kp MINUS,  LT1 RM2, ALL, 30)
+ZMK_COMBO(prcnt, &kp PRCNT,  LT0 RM2, ALL, 30)
 
-ZMK_COMBO(grave,  &kp GRAVE, LM4 RM0, ALL, 25)
-ZMK_COMBO(dqt,    &kp DQT,   LM3 RM0, ALL, 25)
-ZMK_COMBO(sqt,    &kp SQT,   LM2 RM0, ALL, 25)
-ZMK_COMBO(sqt,    &kp UNDER, LM1 RM0, ALL, 25)
-ZMK_COMBO(sqt,    &kp EQUAL, LM0 RM0, ALL, 25)
+ZMK_COMBO(grave,  &kp GRAVE, LM4 RM2, ALL, 30)
+ZMK_COMBO(dqt,    &kp DQT,   LM3 RM2, ALL, 30)
+ZMK_COMBO(sqt,    &kp SQT,   LM2 RM2, ALL, 30)
+ZMK_COMBO(under,  &kp UNDER, LM1 RM2, ALL, 30)
+ZMK_COMBO(equal,  &kp EQUAL, LM0 RM2, ALL, 30)
 
+ZMK_COMBO(tilde,  &kp tilde, LB4 RM2, ALL, 30)
+ZMK_COMBO(star,   &kp star,  LB3 RM2, ALL, 30)
+ZMK_COMBO(lbkt,   &kp lbkt,  LB2 RM2, ALL, 30)
+ZMK_COMBO(rbkt,   &kp rbkt,  LB1 RM2, ALL, 30)
+ZMK_COMBO(amps,   &kp amps,  LB0 RM2, ALL, 30)
 
