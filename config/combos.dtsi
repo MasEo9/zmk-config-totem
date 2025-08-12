@@ -23,17 +23,17 @@ ZMK_COMBO(stick_shift,  &sk LSHFT,   LM2 RM2, ALL, COMBO_SLOW)
 
 // left hand combos
 // upper row
-ZMK_COMBO(minus, &kp MINUS,  LT3 LM2, ALL, COMBO_SLOW)
+ZMK_COMBO(excl,  &kp EXCL,   LT3 LM2, ALL, COMBO_SLOW)
 ZMK_COMBO(lt,    &kp LT,     LT3 LT2, ALL, COMBO_FAST)
 ZMK_COMBO(gt,    &kp GT,     LT1 LT2, ALL, COMBO_FAST)
-ZMK_COMBO(excl,  &kp EXCL,   LT1 LM2, ALL, COMBO_SLOW)
+ZMK_COMBO(equal, &kp EQUAL,  LT1 LM2, ALL, COMBO_SLOW)
 ZMK_COMBO(prcnt, &kp PRCNT,  LT1 LT0, ALL, COMBO_FAST) 
 
 // middle row
 ZMK_COMBO(grave,  &kp GRAVE, LM4 LM3, ALL, COMBO_FAST)
 ZMK_COMBO(sqt,    &kp SQT,   LM3 LM2, ALL, COMBO_FAST)
 ZMK_COMBO(under,  &kp UNDER, LM1 LM2, ALL, COMBO_FAST)
-ZMK_COMBO(equal,  &kp EQUAL, LM0 LM1, ALL, COMBO_FAST)
+ZMK_COMBO(minus,  &kp MINUS, LM0 LM1, ALL, COMBO_FAST)
 
 // bottom row
 ZMK_COMBO(tilde,  &kp TILDE, LB3 LM2, ALL, COMBO_SLOW)
