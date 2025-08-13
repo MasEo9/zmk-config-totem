@@ -9,7 +9,7 @@
   ╭─────────────────────╮ ╭─────────────────────╮
   │   !  <   >   =   %  │ │  ^   {   }   $   |  │
   │  `   '       _   -  │ │  #   (       )   "  │
-  │  ~   [   ]   *   &  │ │  @   \   +          │
+  │  ~   [   ]   *   &  │ │  @   +   \          │
   ╰───────╮             │ │             ╭───────╯
           ╰─────────────╯ ╰─────────────╯ 
 */
@@ -22,10 +22,10 @@ ZMK_COMBO(stick_shift,  &sk LSHFT,   LM0 RM0, ALL, COMBO_SLOW)
 
 // left hand combos
 // upper row
-ZMK_COMBO(excl,  &kp EXCL,   LT3 LM2, ALL, COMBO_SLOW)
+ZMK_COMBO(excl,  &kp EXCL,   LT3 LT4, ALL, COMBO_SLOW)
 ZMK_COMBO(lt,    &kp LT,     LT3 LT2, ALL, COMBO_FAST)
 ZMK_COMBO(gt,    &kp GT,     LT1 LT2, ALL, COMBO_FAST)
-ZMK_COMBO(equal, &kp EQUAL,  LT1 LM2, ALL, COMBO_SLOW)
+ZMK_COMBO(equal, &kp EQUAL,  LT2 LM1, ALL, COMBO_SLOW)
 ZMK_COMBO(prcnt, &kp PRCNT,  LT1 LT0, ALL, COMBO_FAST) 
 
 // middle row
@@ -54,11 +54,12 @@ ZMK_COMBO(pipe,   &kp PIPE,    RT3 RT4, ALL, COMBO_FAST)
 ZMK_COMBO(hash,   &kp HASH,    RM0 RM1, ALL, COMBO_FAST)
 ZMK_COMBO(lpar,   &kp LPAR,    RM1 RM2, ALL, COMBO_FAST)
 ZMK_COMBO(rpar,   &kp RPAR,    RM3 RM2, ALL, COMBO_FAST)
-ZMK_COMBO(dqt,    &kp DQT,     RM3 RM4, ALL, COMBO_SLOW)
+ZMK_COMBO(dqt,    &kp DQT,     RM1 RM3, ALL, COMBO_SLOW)
                             
 // bottom row         ROW
 ZMK_COMBO(at,     &kp AT,      RB0 RB1, ALL, COMBO_SLOW)
-ZMK_COMBO(bslsh,  &kp BSLH,    RB1 RB2, ALL, COMBO_FAST)
-ZMK_COMBO(kpplus, &kp KP_PLUS, RB2 RB3, ALL, COMBO_FAST)
+ZMK_COMBO(bslsh,  &kp BSLH,    RB2 RB3, ALL, COMBO_FAST)
+ZMK_COMBO(kpplus, &kp KP_PLUS, RB1 RB2, ALL, COMBO_FAST)
+
 
 
