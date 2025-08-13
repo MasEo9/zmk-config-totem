@@ -19,7 +19,7 @@
 
 // both hand combos
 ZMK_COMBO(stick_shift,  &sk LSHFT,     LM2 RM2, ALL, COMBO_SLOW)
-ZMK_COMBO(num_word,     &num_word NAV, LM1 RM1, ALL, COMBO_SLOW)
+ZMK_COMBO(num_word,     &num_word NAV, LT2 RT2, ALL, COMBO_SLOW)
 
 // left hand combos
 // upper row
