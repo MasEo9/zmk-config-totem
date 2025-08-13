@@ -11,11 +11,15 @@ manifest:
       revision: main
       import: app/west.yml
 
-    # ZMK modules
-    - name: zmk-auto-layer
-      path: modules/zmk/auto-layer
+
     - name: zmk-helpers
-      path: modules/zmk/helpers
+      remote: urob
+      revision: main
+
+    - name: zmk-auto-layer
+      remote: zmkfirmware
+      revision: main
+      path: modules/zmk/auto-layer
 
   self:
     path: config
