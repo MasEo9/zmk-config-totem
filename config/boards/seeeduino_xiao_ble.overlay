@@ -3,4 +3,7 @@
 
 &i2c0 {
     status = "disabled";
+    /delete-property/ pinctrl-0;
+    /delete-property/ pinctrl-1;
+    /delete-property/ pinctrl-names;
 };
