@@ -25,7 +25,6 @@
 #define SYM  2
 #define ADJ  3
 #define MEDA 4
-#define MOUS 5
 
 #define _BT_CLR &bt BT_CLR_ALL
 
@@ -101,7 +100,7 @@ label= "BASE"                              ;
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P 
                 &hml LGUI A &hml LALT S &hml LSHFT D &hml LCTRL F &kp G         &kp H     &hmr RCTRL J &hmr RSHFT K &hmr RALT L &hmr RGUI SEMI
     &ss_cw      &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &num_word NAV
-                                      &lt 4 ESC  &lt NAV SPACE &kp RET       &lt 2 TAB   &bs_del     &kp RC(S)   
+                                      &lt MEDA ESC  &lt NAV SPACE &kp RET       &lt 2 TAB   &bs_del     &kp RC(S)   
                        >;
                 };
 
@@ -184,30 +183,6 @@ label= "ADJ"                               ;
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-                mous_layer {
-// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "MOUS"                              ;
-// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-//             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃  layer0   ┃   layer1  ┃  layer2   ┃           ┃           ┃   ┃           ┃           ┃  mouseup  ┃           ┃           ┃
-//             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃ mouseleft ┃  mousedn  ┃ mouserght ┃           ┃
-// ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃ leftclk   ┃  rightclk ┃           ┃           ┃           ┃
-// ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
-//                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
- bindings = <
-// ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-
-                &to 0       &to 1      &to 2       &to 3       &trans          &trans      &trans      &mmv MOVE_UP  &trans      &trans
-                &trans      &trans     &trans      &trans      &trans          &trans      &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT    &trans  
-    &trans      &trans      &trans     &trans      &trans      &trans          &trans      &mkp LCLK   &mkp RCLK   &trans      &trans       &trans         
-                                       &trans      &trans      &trans          &trans      &trans      &trans      
-                        >;
-                };
-
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
                 meda_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -225,10 +200,10 @@ label= "MEDA"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &to 0       &to 1      &to 2       &to 3       &trans          &trans      &trans      &kp C_VOL_UP  &trans      &trans
-                &trans      &trans     &trans      &trans      &trans          &trans      &kp C_PREV  &kp C_PP      &kp C_NEXT  &trans  
-    &trans      &trans      &trans     &trans      &trans      &trans          &trans      &kp C_MUTE  &kp C_VOL_DN  &trans      &trans       &trans         
-                                       &trans      &trans      &trans          &trans      &trans      &trans      
+                &trans      &mkp LCLK   &mmv MOVE_UP &mkp RCLK &trans           &trans      &trans      &kp C_VOL_UP  &trans      &trans
+                &trans   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans   &trans      &kp C_PREV  &kp C_PP      &kp C_NEXT  &trans  
+    &trans      &trans      &trans      &trans     &trans      &trans           &trans      &kp C_MUTE  &kp C_VOL_DN  &trans      &trans       &trans         
+                                        &trans     &trans      &trans           &trans      &trans      &trans      
                         >;
                 };
         };
