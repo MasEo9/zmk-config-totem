@@ -18,11 +18,5 @@ manifest:
     - name: zmk-helpers
       path: modules/zmk/helpers
 
-    # Only source necessary Zephyr modules. Remove this entire section to restore
-    # the default (needed for less common hardware).
-    - name: zephyr
-      remote: zmkfirmware
-      revision: v3.5.0+zmk-fixes
-
   self:
     path: config
