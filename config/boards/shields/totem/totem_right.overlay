@@ -10,6 +10,10 @@
     col-offset = <5>;
 };
 
+&i2c0 {
+    status = "disabled";
+};
+
 &kscan0 {
     col-gpios
         = <&xiao_d 8 GPIO_ACTIVE_HIGH>
