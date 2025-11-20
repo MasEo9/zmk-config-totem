@@ -11,7 +11,7 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
        
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/pointing.h>
+
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -47,31 +47,6 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 
 #include "combos.dtsi" // Must be sourced after HRM-combo hack.
 
-
-// swift shift & caps word
-ZMK_BEHAVIOR(ss_cw, tap_dance,
-    tapping-term-ms = <200>;
-    bindings = <&sk LSHFT>, <&caps_word>;
-)
-
-ZMK_BEHAVIOR(td, tap_dance,
-    tapping-term-ms = <105>;
-    bindings = <&kp>, <&kp>;
-)
-
-// tap: backspace | shift + tap: delete 
-ZMK_MOD_MORPH(bs_del,
-    bindings = <&kp BSPC>, <&kp DEL>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-ZMK_BEHAVIOR(mo_sl, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <225>;
-    quick-tap-ms = <105>;
-    bindings = <&mo>, <&sl>;
-)
-
    
 /
 
@@ -98,8 +73,8 @@ display-name = "BASE"                      ;
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P 
                 &hml LGUI A &hml LALT S &hml LSHFT D &hml LCTRL F &kp G         &kp H     &hmr RCTRL J &hmr RSHFT K &hmr RALT L &hmr RGUI SEMI
-    &ss_cw      &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &lt ADJ
-                                      &lt MEDA ESC  &lt NAV SPACE &kp RET       &lt 2 TAB   &bs_del     &kp RC(S)   
+    &caps_word  &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &lt ADJ
+                                      &lt MEDA ESC  &lt NAV SPACE &kp RET       &lt 2 TAB   &kp BSPC     &kp RC(S)   
                        >;
                 };
 
