@@ -272,7 +272,7 @@ ZMK_CONDITIONAL_LAYER(fun_layer, NAV SYM, NUM)
                  &studio_unlock ___         &kp C_VOL_UP ___        ___             ___         ___         ___         ___         ___
                     ___         &kp C_PREV  &kp C_PP    &kp C_NEXT  ___             ___         ___         ___         ___         ___
         ___         ___         ___         &kp C_VOL_DN ___        ___             ___         ___         ___         ___         ___         ___
-                                            ___         ___         ___             ___         ___
+                                            ___         ___         ___             ___         ___         ___
                             >;
             };
 
