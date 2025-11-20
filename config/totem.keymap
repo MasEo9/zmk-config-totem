@@ -244,7 +244,7 @@ ZMK_CONDITIONAL_LAYER(fun_layer, NAV SYM, NUM)
     //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
      bindings = <
     // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-                                          _BT_SEL_KEYS                              ___         &kp F7      &kp F8      &kp F9      &kp F12 
+                                          _BT_SEL_KEYS_                             ___         &kp F7      &kp F8      &kp F9      &kp F12 
                     ___         ___         ___         ___         ___             ___         &kp F4      &kp F5      &kp F6      &kp F11 
         ___         ___         ___         ___         ___         ___             ___         &kp F1      &kp F2      &kp F3      &kp F10     ___
                                             ___         ___         ___             ___         ___         ___
