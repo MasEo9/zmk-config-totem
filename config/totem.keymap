@@ -168,10 +168,10 @@ ZMK_CONDITIONAL_LAYER(fun_layer, NAV SYM, NUM)
     //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
      bindings = <
     // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-                   &kp Q       &kp W       &kp E       &kp R       &kp T            &kp Y       &kp U       &kp I       &kp O       &kp P 
-                &hml LGUI A &hml LALT S &hml LSHFT D &hml LCTRL F  &kp G            &kp H     &hmr RCTRL J &hmr RSHFT K &hmr RALT L &hmr RGUI SEMI
-       &caps_word  &kp Z       &kp X       &kp C       &kp V       &kp B            &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mo ADJ
-                                        &lt FUN ESC &lt NAV SPACE &kp RET          &lt SYM TAB &kp BSPC    &kp RC(S)   
+		                    &kp Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SQT
+                    &hml LSHIFT A &hml LCTRL R &hml LALT S &hml LGUI T &kp G        &kp M       &hmr LGUI N &hmr LALT E &hmr LCTRL I &hmr RSHIFT O
+        &kp ESC     &kp Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       COMMA_LT    DOT_GT      &lt FUN FSLH &kp BSPC
+                                            XXX         &mo NAV     MAGIC_SHIFT     &mo FUN     LT_SPACE    XXX
                             >;
             };
 
