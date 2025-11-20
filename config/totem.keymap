@@ -17,7 +17,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <zmk-helpers/helper.h> // Requires zmk-helpers module.
 
-#include "zmk-helpers/key-labels/totem.h"
 
 #define BASE 0
 #define NAV  1
