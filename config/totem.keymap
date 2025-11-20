@@ -67,7 +67,8 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
   MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS)                             \
   ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
 
-/* Nav cluster */
+
+#include "combos.dtsi" // Must be sourced after HRM-combo hack.
 
 // Trigger tap-action on all interrupts.
 #define MT_CORE                                                                \
@@ -78,9 +79,16 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 
 &mt { MT_CORE };
 
+&caps_word { // Mods deactivate caps-word, requires PR #1451. [TODO: rebase]
+  /delete-property/ ignore-modifiers;
+};
 
-// Macro to prevent holding and triggering multiple taps
-ZMK_MACRO_ONE_PARAM(tap_macro, bindings = <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>; wait-ms = <0>; tap-ms = <5>;)
+
+// tap: backspace | shift + tap: delete 
+ZMK_MOD_MORPH(bs_del,
+    bindings = <&kp BSPC>, <&kp DEL>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
 
 /* Keymap */
 
@@ -122,8 +130,8 @@ ZMK_MACRO_ONE_PARAM(tap_macro, bindings = <&macro_param_1to1>, <&macro_tap &kp M
     // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
                     &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
                     &hml LGUI A &hml LALT S &hml LSHIFT D &hml LCTRL F &kp G        &kp H       &hmr LCTRL J &hmr RSHIFT K &hmr LALT L &hmr LGUI SEMI
-        &kp DEL     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA    &kp DOT      &kp FSLH  &mo FUN 
-                                            &kp ESC     &lt NAV SPACE  &kp RET      &kp TAB     &kp BSPC    &kp RC(S) 
+        &caps_word  &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA    &kp DOT      &kp FSLH  &mo FUN 
+                                            &kp ESC     &lt NAV SPACE  &kp RET      &kp TAB     &bs_del     &kp RC(S) 
                             >;
             };
 
