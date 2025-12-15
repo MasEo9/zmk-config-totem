@@ -92,18 +92,12 @@ ZMK_MOD_MORPH(bs_del,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-// Tap: sticky shift | double-tap: cap word | Hold: shift 
-ZMK_BEHAVIOR(smart_cap, hold_tap,
-    flavor = "balanced";
+ZMK_BEHAVIOR(ss_cw, tap_dance,
     tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-    bindings = <&kp LSHFT>, <&cap_dance>;
+    bindings = <&sk LSHFT>, <&caps_word>;
 )
-ZMK_TAP_DANCE(cap_dance, bindings = <&sk LSHIFT>, <&caps_word>;
-              tapping-term-ms = <200>;)
 
-
-// Tap: num-word | double-tap: sticky nav-layer | Hold: nav-layer.
+// Tap: num-word | double-tap: sticky num-layer | Hold: nav-layer.
 #define SMART_NUM &smart_num NAV 0
 ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
@@ -151,7 +145,7 @@ ZMK_TAP_DANCE(num_dance, bindings = <&num_word NAV>, <&sl NAV>;
     // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
                     &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
                     &hml LGUI A &hml LALT S &hml LSHIFT D &hml LCTRL F &kp G        &kp H       &hmr LCTRL J &hmr RSHIFT K &hmr LALT L &hmr LGUI SEMI
-        &smart_cap  &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA    &kp DOT      &kp FSLH  SMART_NUM 
+        &ss_cw      &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA    &kp DOT      &kp FSLH  SMART_NUM 
                                             &kp ESC     &lt NAV SPACE  &kp RET      &kp TAB     &bs_del     &kp RC(S) 
                             >;
             };
