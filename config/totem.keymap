@@ -97,12 +97,12 @@ ZMK_BEHAVIOR(ss_cw, tap_dance,
     bindings = <&sk LSHFT>, <&caps_word>;
 )
 
-// Tap: sticky num-layer | double-tap: num-word | Hold: nav-layer.
+// Tap: sticky num-word | double-tap: num-layer | Hold: nav-layer.
 #define SMART_NUM &smart_num NAV 0
 ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
 
-ZMK_TAP_DANCE(num_dance, bindings = <&sl NAV>, <&num_word NAV>;
+ZMK_TAP_DANCE(num_dance, bindings =  <&num_word NAV>, <&sl NAV>;
               tapping-term-ms = <200>;)
 
 /* Keymap */
@@ -220,7 +220,7 @@ ZMK_TAP_DANCE(num_dance, bindings = <&sl NAV>, <&num_word NAV>;
      bindings = <
     // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
                  &studio_unlock ___         &kp C_VOL_UP ___        ___             ___         ___         ___         ___         ___
-                    ___         &kp C_PREV  &kp C_PP    &kp C_NEXT  ___             ___         ___         ___         ___         ___
+                    ___         &kp C_PREV  &kp K_PP    &kp C_NEXT  ___             ___         ___         ___         ___         ___
         ___         ___         ___         &kp C_VOL_DN ___        ___             ___         ___         ___         ___         ___         ___
                                             ___         ___         ___             ___         ___         ___
                             >;
