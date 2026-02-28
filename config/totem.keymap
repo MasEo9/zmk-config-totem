@@ -227,9 +227,3 @@ ZMK_TAP_DANCE(num_dance, bindings =  <&num_word NAV>, <&sl NAV>;
          };
     };
 };
-
-
-
-
-
-

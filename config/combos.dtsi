@@ -7,16 +7,16 @@
   ╰───────╮ LH2 LH1 LH0 │ │ RH0 RH1 RH2 ╭───────╯
           ╰─────────────╯ ╰─────────────╯ 
   ╭─────────────────────╮ ╭─────────────────────╮
-  │   !  <   >   =   %  │ │  ^   {   }       |  │
-  │  `   '       _   -  │ │  #   (       )   "  │
-  │  ~   [   ]   *   &  │ │  @   +   \   $      │
+  │   !  <   >       %  │ │  ^   {   }       |  │
+  │  ~   '       _   -  │ │  #   (   "    )     │
+  │  =   [   ]       &  │ │  @   +   \   $      │
   ╰───────╮             │ │             ╭───────╯
           ╰─────────────╯ ╰─────────────╯ 
 */
-#define COMBO_TERM_FAST 18
-#define COMBO_TERM_SLOW 30
+#define COMBO_TERM_FAST 25
+#define COMBO_TERM_SLOW 40
 
-#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_FAST 125
 #define COMBO_IDLE_SLOW 50
 
 // left hand combos
@@ -24,21 +24,22 @@
 ZMK_COMBO(excl,  &kp EXCL,   LT3 LT4, ALL, COMBO_TERM_SLOW, COMBO_IDLE_SLOW )
 ZMK_COMBO(lt,    &kp LT,     LT3 LT2, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST )
 ZMK_COMBO(gt,    &kp GT,     LT1 LT2, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST )
-ZMK_COMBO(equal, &kp EQUAL,  LT2 LM1, ALL, COMBO_TERM_SLOW, COMBO_IDLE_SLOW )
 ZMK_COMBO(prcnt, &kp PRCNT,  LT1 LT0, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST ) 
+
 
 // middle row
 ZMK_COMBO(grave,  &kp GRAVE, LM0 LM1, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST )
 ZMK_COMBO(minus,  &kp MINUS, LM3 LM2, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST )
 ZMK_COMBO(under,  &kp UNDER, LM1 LM2, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST )
 ZMK_COMBO(sqt,    &kp SQT,   LM3 LM1, ALL, COMBO_TERM_SLOW, COMBO_IDLE_SLOW )
+ZMK_COMBO(tilde,  &kp TILDE, LM4 LM3, ALL, COMBO_TERM_SLOW, COMBO_IDLE_SLOW )
 
 // bottom row
-ZMK_COMBO(tilde,  &kp TILDE, LB4 LB3, ALL, COMBO_TERM_SLOW, COMBO_IDLE_SLOW )
 ZMK_COMBO(lbkt,   &kp LBKT,  LB3 LB2, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST )
 ZMK_COMBO(rbkt,   &kp RBKT,  LB2 LB1, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST )
 ZMK_COMBO(star,   &kp STAR,  LB1 LM2, ALL, COMBO_TERM_SLOW, COMBO_IDLE_SLOW )
 ZMK_COMBO(amps,   &kp AMPS,  LB1 LB0, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST )
+ZMK_COMBO(equal,  &kp EQUAL, LB4 LB3, ALL, COMBO_TERM_SLOW, COMBO_IDLE_SLOW )
 
 // right hand combos
 // upper row
