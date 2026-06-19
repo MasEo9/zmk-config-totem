@@ -245,7 +245,7 @@ ZMK_TAP_DANCE(num_dance, bindings =  <&num_word NAV>, <&sl NAV>;
     // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
                  &studio_unlock ___         &kp C_VOL_UP ___        ___             ___         ___         ___         ___         ___
                     ___         &kp C_PREV  &kp K_PP    &kp C_NEXT  ___             ___         ___         ___         ___         ___
-        ___         ___         ___         &kp C_VOL_DN ___        ___             ___         &to 1       ___         ___         ___         ___
+        ___         ___         ___         &kp C_VOL_DN ___        ___             &to 0       &to 1       ___         ___         ___         ___
                                             ___         ___         ___             ___         ___         ___
                             >;
          };
